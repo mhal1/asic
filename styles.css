@@ -115,7 +115,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 3rem 0rem 7rem 0rem;
+  margin: 1rem 0rem 7rem 0rem;
 }
 
 .prayerTimes {
@@ -188,6 +188,8 @@ main {
   align-items: center;
   justify-content: space-between;
   column-gap: 0.5em;
+  font-family: 'Kanit', sans-serif;
+  
 
 }
 
@@ -197,6 +199,7 @@ main {
 
 .prayerName {
   text-align: end;
+  letter-spacing: 0.1em;
   /* width: 40%; */
 }
 

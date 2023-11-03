@@ -19,16 +19,37 @@
 
 <body>
 
-  <header id="header" class="page-header">
+  <div class="headerBackground">
+    <header id="header" class="page-header">
 
-    <div class="title">
-      <span class="in-title">Al Salaam Islamic Centre</span>
-    </div>
-    <button class="menu-toggle" id="toggle-menu">
+      <div class="title">
+        <span class="in-title">Al Salaam Islamic Centre</span>
+      </div>
+      <div class="longNav">
+        <div>
+          Home
+        </div>
+        <div>
+          About
+        </div>
+        <div>
+          Services
+        </div>
+        <div>
+          News
+        </div>
+        <div>
+          Contact
+        </div>
+      </div>
 
-      <i class="fa fa-navicon" style="font-size:18pt; color: rgb(255, 255, 255);"></i>
-    </button>
-  </header>
+      <button class="menu-toggle" id="toggle-menu">
+
+        <i class="fa fa-navicon" style="font-size:18pt; color: rgb(255, 255, 255);"></i>
+      </button>
+    </header>
+  </div>
+
 
   <nav class="menu" id="main-menu">
 
@@ -38,7 +59,7 @@
         <li class="dropdown_item-2"><a href="about.html">About</a></li>
         <li class="dropdown_item-3"><a href="services.html">Services</a></li>
         <li class="dropdown_item-3"><a href="news.html">News</a></li>
-        <li class="dropdown_item-3"><a href="/registrar-service.html">Contact</a></li>
+        <li class="dropdown_item-3"><a href="contact.html">Contact</a></li>
 
       </ul>
     </div>
@@ -56,12 +77,13 @@
       <div class="prayerTimes-1">
         <i class="fa fa-clock-o"></i>
         Prayer Times
+        <div>
+          <div id="todayDateEnglish"></div>
+          <div id="todayDateHijri"></div>
+          <div id="todayDateArabicHijri"></div>
+        </div>
       </div>
-      <div>
-        <div id="todayDateEnglish"></div>
-        <div id="todayDateHijri"></div>
-        <div id="todayDateArabicHijri"></div>
-      </div>
+      
 
       <div class="actualPrayerTimes">
         <div class="prayerTimeFormat">
@@ -93,6 +115,8 @@
       </div>
 
     </aside>
+
+    
   </div>
 
   <!-- <div class="mainImg">
@@ -100,97 +124,97 @@
     </div> -->
 
 
+    <div class="services">
+      <div class="servicesTitle">
+        Services
+      </div>
+      <div class="servicesContainer">
+        <div class="registrarService-2">
+          <div class="registrarService">
+            <div class="registrarServiceTitle">Registrar Service</div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Islamic Marriage (Nikah)
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Islamic Divorce (Talaq)
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Conversion (Shahada)
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Certificates
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              School Reference
+            </div>
+          </div>
+          <div class="rsIcon">
+            <i class="fa fa-caret-right"></i>
+          </div>
 
-  <div class="services">
-    <div class="servicesTitle">
-      Services
+        </div>
+
+        <div class="registrarService-2">
+          <div class="registrarService">
+            <div class="registrarServiceTitle">
+              Education</div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Arabic Courses
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Youth Education Programme
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Introduction to Islam
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Islamic Quaterly
+            </div>
+          </div>
+          <div class="rsIcon">
+            <i class="fa fa-caret-right"></i>
+          </div>
+        </div>
+
+        <div class="registrarService-2">
+          <div class="registrarService">
+            <div class="registrarServiceTitle">
+              Religious Services</div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Islamic Video Talks
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Khutba Online
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Prayer Timetable
+            </div>
+            <div class="homePageItem">
+              <i class="fa fa-check"></i>
+              Funeral Service
+            </div>
+          </div>
+          <div class="rsIcon">
+            <i class="fa fa-caret-right"></i>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="servicesContainer">
-      <div class="registrarService-2">
-        <div class="registrarService">
-          <div class="registrarServiceTitle">Registrar Service</div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Islamic Marriage (Nikah)
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Islamic Divorce (Talaq)
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Conversion (Shahada)
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Certificates
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            School Reference
-          </div>
-        </div>
-        <div class="rsIcon">
-          <i class="fa fa-caret-right"></i>
-        </div>
 
-      </div>
-
-      <div class="registrarService-2">
-        <div class="registrarService">
-          <div class="registrarServiceTitle">
-            Education</div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Arabic Courses
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Youth Education Programme
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Introduction to Islam
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Islamic Quaterly
-          </div>
-        </div>
-        <div class="rsIcon">
-          <i class="fa fa-caret-right"></i>
-        </div>
-      </div>
-
-      <div class="registrarService-2">
-        <div class="registrarService">
-          <div class="registrarServiceTitle">
-            Religious Services</div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Islamic Video Talks
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Khutba Online
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Prayer Timetable
-          </div>
-          <div class="homePageItem">
-            <i class="fa fa-check"></i>
-            Funeral Service
-          </div>
-        </div>
-        <div class="rsIcon">
-          <i class="fa fa-caret-right"></i>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
 
   <div class="news">
     <div class="servicesTitle">
@@ -248,26 +272,28 @@
     </div>
     <div class="newsContainer">
       <div class="card">
-        
+
         <div class="card__info">
           <a href="#" class="title">Islamic Marriage (Nikah) Services</a>
           <p class="content">
-            
+
             Book Your Nikah With Us!
-            
-            Click here for all your marriage services. We now offer the larger halls and restaurant bookings to cater for your big day.
+
+            Click here for all your marriage services. We now offer the larger halls and restaurant bookings to cater
+            for your big day.
           </p>
         </div>
       </div>
 
       <div class="card">
-        
+
         <div class="card__info">
           <a href="#" class="title">Volunteer with us</a>
           <p class="content">
             Get Involved!
 
-            Dedicate your precious time and energy in serving our community. Volunteer with us today and bring a range of skills, expertise and experience that help enhance the services at The Islamic Cultural Centre.
+            Dedicate your precious time and energy in serving our community. Volunteer with us today and bring a range
+            of skills, expertise and experience that help enhance the services at The Islamic Cultural Centre.
           </p>
         </div>
       </div>

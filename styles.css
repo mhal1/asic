@@ -13,19 +13,43 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.page-header {
-  padding: 1em 1em;
-  /* background-color: white; */
-  /* #fff3d1; */
+.headerBackground {
   background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+.page-header {
+  max-width: 1150px;
+  padding: 1em 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 2;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.longNav {
+  display: none;
+}
+
+@media(min-width: 800px) {
+  .longNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: #000000 1px solid; */
+    column-gap: 3rem;
+    color: #ffffff;
+  }
+
+  .menu-toggle {
+    display: none !important;
+  }
 }
 
 
 .in-title {
+  /* border: #000000 solid 1px; */
   font-family: 'Mate', sans-serif;
   font-size: 16pt;
   letter-spacing: 0.05em;
@@ -46,7 +70,7 @@ main {
   border: 0;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  
+
 }
 
 
@@ -112,10 +136,14 @@ main {
 
 .prayerContainer {
   /* border: 1px solid red; */
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1rem 0rem 7rem 0rem;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 1em;
 }
 
 .prayerTimes {
@@ -127,12 +155,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   row-gap: 2rem;
   margin-top: 1rem;
   margin-bottom: 7rem;
   box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  width: 350px;
+  width: 100%;
   /* padding: 0; */
   /* height: 400px; */
   min-height: 300px;
@@ -140,8 +169,18 @@ main {
   border-radius: 5px;
   /* background-color: #dafdde; */
   background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
-  
+  width: 350px;
+  /* border: 1px solid red; */
+}
 
+@media(min-width: 870px) {
+  .prayerTimes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .prayerTimes-1 {
@@ -189,7 +228,7 @@ main {
   justify-content: space-between;
   column-gap: 0.5em;
   font-family: 'Kanit', sans-serif;
-  
+
 
 }
 
@@ -276,6 +315,8 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   color: #ffffff;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .servicesTitle {
@@ -303,7 +344,7 @@ main {
   justify-content: space-between;
   row-gap: 0.3em;
   background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
-  
+
 }
 
 .rsIcon {
@@ -335,7 +376,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   /* border: #000000 1px solid; */
 
 }
@@ -357,7 +398,7 @@ main {
   font-weight: bold;
 }
 
-.newsBoxImg{
+.newsBoxImg {
   height: 210px;
 }
 
@@ -444,9 +485,7 @@ footer {
   opacity: 0;
 }
 
-.image {
-  
-}
+.image {}
 
 
 

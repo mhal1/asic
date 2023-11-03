@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+  <title>Al Salaam Islamic Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Kaushan+Script&family=Mate&family=Cabin"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <header id="header" class="page-header">
+
+    <div class="title">
+      <span class="in-title">Al Salaam Islamic Centre</span>
+    </div>
+    <button class="menu-toggle" id="toggle-menu">
+
+      <i class="fa fa-navicon" style="font-size:18pt; color: rgb(255, 255, 255);"></i>
+    </button>
+  </header>
+
+  <nav class="menu" id="main-menu">
+
+    <div class="menu-dropdown">
+      <ul class="nav-menu dropdown_menu dropdown_menu-4">
+        <li class="dropdown_item-1"><a href="index.html">Home</a></li>
+        <li class="dropdown_item-2"><a href="about.html">About</a></li>
+        <li class="dropdown_item-3"><a href="services.html">Services</a></li>
+        <li class="dropdown_item-3"><a href="news.html">News</a></li>
+        <li class="dropdown_item-3"><a href="/registrar-service.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="donateBtn">
+    <button class="dBtn">
+      DONATE NOW
+
+    </button>
+  </div>
+
+  <div class="prayerContainer">
+    <aside id="prayerTimes" class="prayerTimes">
+      <div class="prayerTimes-1">
+        <i class="fa fa-clock-o"></i>
+        Prayer Times
+      </div>
+      <div>
+        <div id="todayDateEnglish"></div>
+        <div id="todayDateHijri"></div>
+        <div id="todayDateArabicHijri"></div>
+      </div>
+
+      <div class="actualPrayerTimes">
+        <div class="prayerTimeFormat">
+          <div class="prayerName">Fajr</div>
+          <div id="fajrTime"></div>
+        </div>
+        <div class="prayerTimeFormat">
+          <div class="prayerName">Dhuhr</div>
+          <div id="dhuhrTime"></div>
+        </div>
+        <div class="prayerTimeFormat">
+          <div class="prayerName">Asr</div>
+          <div id="asrTime"></div>
+        </div>
+        <div class="prayerTimeFormat">
+          <div class="prayerName">Maghrib</div>
+          <div id="maghribTime"></div>
+        </div>
+        <div class="prayerTimeFormat">
+          <div class="prayerName">Isha</div>
+          <div id="ishaTime"></div>
+        </div>
+      </div>
+
+      <div class="fridayJummah">
+        <div>Friday Jummah Azaan: 12:30</div>
+        <div>Sermon/Khutba starts: 12:15</div>
+        <div>Khateeb: Sheikh A B</div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- <div class="mainImg">
+        <img class="mImg" src="p2.jpg" alt="home" />
+    </div> -->
+
+
+
+  <div class="services">
+    <div class="servicesTitle">
+      Services
+    </div>
+    <div class="servicesContainer">
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">Registrar Service</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Marriage (Nikah)
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Divorce (Talaq)
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Conversion (Shahada)
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Certificates
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            School Reference
+          </div>
+        </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
+        </div>
+
+      </div>
+
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">
+            Education</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Arabic Courses
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Youth Education Programme
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Introduction to Islam
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Quaterly
+          </div>
+        </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
+        </div>
+      </div>
+
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">
+            Religious Services</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Video Talks
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Khutba Online
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Prayer Timetable
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Funeral Service
+          </div>
+        </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="news">
+    <div class="servicesTitle">
+      Latest News
+    </div>
+    <div class="newsContainer">
+      <div class="card">
+        <div class="newsBoxImg">
+          <img class="newsBoxImgIn" src="aq3.jpg" alt="img" />
+        </div>
+        <div class="card__info">
+          <span class="page">Guests</span>
+          <a href="#" class="title">Grand Mufti of Tanzania Visits the ICC</a>
+          <p class="content">
+            The Grand Mufti of Tanzania Sheikh Dr Abubakar Zubeir Mbwana visited The London Central Mosque & Islamic
+            Cultural Centre with a delegation.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="newsBoxImg">
+          <img class="newsBoxImgIn" src="alecso2023a.jpg" alt="img" />
+        </div>
+        <div class="card__info">
+          <span class="page">Visits</span>
+          <a href="#" class="title">ICC meets Director of ALESCO in Tunisia</a>
+          <p class="content">
+            Ahmed Limam; Head of Education visited the Director General Dr. Mohamed Ould Omar of ALECSO in Tunisia
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="newsBoxImg">
+          <img class="newsBoxImgIn" src="qurb1.jpg" alt="img" />
+        </div>
+        <div class="card__info">
+          <span class="page">Charity</span>
+          <a href="#" class="title">Qurbani Distribution 2023 in 9 countries</a>
+          <p class="content">
+            Firstly, we would like to thank Allah, without His help we would not be able to achieve this great
+            accomplishment, </p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="news">
+    <div class="servicesTitle">
+      Updates
+    </div>
+    <div class="newsContainer">
+      <div class="card">
+        
+        <div class="card__info">
+          <a href="#" class="title">Islamic Marriage (Nikah) Services</a>
+          <p class="content">
+            
+            Book Your Nikah With Us!
+            
+            Click here for all your marriage services. We now offer the larger halls and restaurant bookings to cater for your big day.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        
+        <div class="card__info">
+          <a href="#" class="title">Volunteer with us</a>
+          <p class="content">
+            Get Involved!
+
+            Dedicate your precious time and energy in serving our community. Volunteer with us today and bring a range of skills, expertise and experience that help enhance the services at The Islamic Cultural Centre.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="mainFooter">
+
+      <div>
+        Al Salaam Islamic Centre
+
+      </div>
+      <div>
+        Floor 0 Unimix House, Abbey Road, London, NW10 7SB
+
+      </div>
+      <div>
+        United Kingdom
+
+      </div>
+
+      <div class="socialsFooter">
+        Follow us on
+      </div>
+      <div class="socialIconsFooter">
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+  <script type="text/javascript">
+
+    const d = new Date();
+    const arabicIslamicDate = new Intl.DateTimeFormat('ar-TN-u-ca-islamic', { timeZone: 'UTC', day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(Date.now());
+    const englishIslamicDate = new Intl.DateTimeFormat('en-GB-u-ca-islamic', { timeZone: 'UTC', day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(Date.now());
+    document.getElementById("todayDateEnglish").innerHTML = d.toDateString();
+    document.getElementById("todayDateHijri").innerHTML = englishIslamicDate;
+    document.getElementById("todayDateArabicHijri").innerHTML = arabicIslamicDate;
+
+    const dateForPrayerTime = new Date(Date.now()).toLocaleString().split(',')[0].split('/').join('-');
+    $.getJSON('https://api.aladhan.com/v1/timingsByAddress/' + dateForPrayerTime + '?address=London,UK&method=2', function (json) {
+      console.log(json);
+      document.getElementById("fajrTime").innerHTML = json.data.timings.Fajr;
+      document.getElementById("dhuhrTime").innerHTML = json.data.timings.Dhuhr;
+      document.getElementById("asrTime").innerHTML = json.data.timings.Asr;
+      document.getElementById("maghribTime").innerHTML = json.data.timings.Maghrib;
+      document.getElementById("ishaTime").innerHTML = json.data.timings.Isha;
+      document.getElementById("todayDateHijri").innerHTML = json.data.date.hijri.day + " " + json.data.date.hijri.weekday.en + " " +
+        json.data.date.hijri.month.en + " " + json.data.date.hijri.year;
+
+      document.getElementById("todayDateArabicHijri").innerHTML = " " + json.data.date.hijri.year + " " + json.data.date.hijri.weekday.ar + " " +
+        +  json.data.date.hijri.day + " " + json.data.date.hijri.month.ar;
+
+
+
+
+    });
+
+
+    (function () {
+      var button = document.getElementById("toggle-menu");
+      var menu = document.getElementById("main-menu");
+
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        menu.classList.toggle("is-open");
+      });
+
+      // Event listener to close the menu when clicking outside of it
+      document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !button.contains(event.target)) {
+          menu.classList.remove("is-open");
+        }
+      });
+    })();
+
+
+
+  </script>
+</body>
+
+
+</html>

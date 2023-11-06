@@ -65,13 +65,6 @@
     </div>
   </nav>
 
-  <div class="donateBtn">
-    <button class="dBtn">
-      DONATE NOW
-
-    </button>
-  </div>
-
   <div class="prayerContainer">
     <aside id="prayerTimes" class="prayerTimes">
       <div class="prayerTimes-1">
@@ -83,7 +76,7 @@
           <div id="todayDateArabicHijri"></div>
         </div>
       </div>
-      
+
 
       <div class="actualPrayerTimes">
         <div class="prayerTimeFormat">
@@ -116,106 +109,161 @@
 
     </aside>
 
-    
+
+  </div>
+  
+  <!-- Container for the image gallery -->
+  <div class="galleryContainer">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/tower.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/hall1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/outside1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/outside2.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+  <div class="caption-container">
+    <div id="caption"></div>
   </div>
 
-  <!-- <div class="mainImg">
-        <img class="mImg" src="p2.jpg" alt="home" />
-    </div> -->
 
-
-    <div class="services">
-      <div class="servicesTitle">
-        Services
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/tower.jpg" style="width:100%" onclick="currentSlide(1)" alt="Imam Tower">
       </div>
-      <div class="servicesContainer">
-        <div class="registrarService-2">
-          <div class="registrarService">
-            <div class="registrarServiceTitle">Registrar Service</div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Islamic Marriage (Nikah)
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Islamic Divorce (Talaq)
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Conversion (Shahada)
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Certificates
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              School Reference
-            </div>
-          </div>
-          <div class="rsIcon">
-            <i class="fa fa-caret-right"></i>
-          </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hall1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Prayer Hall">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/outside1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Entrance">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/outside2.jpg" style="width:100%" onclick="currentSlide(4)"
+          alt="Doorway Entrance">
+      </div>
+      <!--<div class="column">
+        <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
+          alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div> -->
+    </div>
+  </div>
 
-        </div>
 
-        <div class="registrarService-2">
-          <div class="registrarService">
-            <div class="registrarServiceTitle">
-              Education</div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Arabic Courses
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Youth Education Programme
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Introduction to Islam
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Islamic Quaterly
-            </div>
+  <div class="services">
+    <div class="servicesTitle">
+      Services
+    </div>
+    <div class="servicesContainer">
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">Registrar Service</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Marriage (Nikah)
           </div>
-          <div class="rsIcon">
-            <i class="fa fa-caret-right"></i>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Divorce (Talaq)
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Conversion (Shahada)
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Certificates
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            School Reference
           </div>
         </div>
-
-        <div class="registrarService-2">
-          <div class="registrarService">
-            <div class="registrarServiceTitle">
-              Religious Services</div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Islamic Video Talks
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Khutba Online
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Prayer Timetable
-            </div>
-            <div class="homePageItem">
-              <i class="fa fa-check"></i>
-              Funeral Service
-            </div>
-          </div>
-          <div class="rsIcon">
-            <i class="fa fa-caret-right"></i>
-          </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
         </div>
 
+      </div>
+
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">
+            Education</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Arabic Courses
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Youth Education Programme
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Introduction to Islam
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Quaterly
+          </div>
+        </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
+        </div>
+      </div>
+
+      <div class="registrarService-2">
+        <div class="registrarService">
+          <div class="registrarServiceTitle">
+            Religious Services</div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Islamic Video Talks
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Khutba Online
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Prayer Timetable
+          </div>
+          <div class="homePageItem">
+            <i class="fa fa-check"></i>
+            Funeral Service
+          </div>
+        </div>
+        <div class="rsIcon">
+          <i class="fa fa-caret-right"></i>
+        </div>
       </div>
 
     </div>
 
+  </div>
 
+  <!-- 
   <div class="news">
     <div class="servicesTitle">
       Latest News
@@ -264,7 +312,7 @@
 
     </div>
 
-  </div>
+  </div> -->
 
   <div class="news">
     <div class="servicesTitle">
@@ -333,6 +381,38 @@
   </footer>
 
   <script type="text/javascript">
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
 
     const d = new Date();
     const arabicIslamicDate = new Intl.DateTimeFormat('ar-TN-u-ca-islamic', { timeZone: 'UTC', day: 'numeric', month: 'long', weekday: 'long', year: 'numeric' }).format(Date.now());

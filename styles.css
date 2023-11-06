@@ -291,6 +291,7 @@ main {
   user-select: none;
   -webkit-user-select: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Position the "next button" to the right */
@@ -313,6 +314,7 @@ main {
   position: absolute;
   top: 0;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 0px 0px 5px 0px;
 }
 

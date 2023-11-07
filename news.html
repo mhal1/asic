@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+  <title>Al Salaam Islamic Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit&family=Kaushan+Script&family=Mate&family=Cabin&family=Dancing+Script:wght@700&family=Jost"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="images/asiclogo.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="headerBackground">
+    <header id="header" class="page-header">
+
+      <div class="headerTitle">
+        <div class="in-title">
+
+          <img src="images/asiclogo.svg" height="50px">
+
+          <div>
+            Al Salaam 
+            <br>
+            Islamic Centre
+          </div>
+        
+        </div>
+      </div>
+      <div class="longNav">
+        <div>
+          Home
+        </div>
+        <div>
+          About
+        </div>
+        <div>
+          Services
+        </div>
+        <div>
+          News
+        </div>
+        <div>
+          Contact
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="toggle-menu">
+
+        <i class="fa fa-navicon" style="font-size:18pt; color: rgb(255, 255, 255);"></i>
+      </button>
+    </header>
+  </div>
+
+
+  <nav class="menu" id="main-menu">
+
+    <div class="menu-dropdown">
+      <ul class="nav-menu dropdown_menu dropdown_menu-4">
+        <li class="dropdown_item-1"><a href="index.html">Home</a></li>
+        <li class="dropdown_item-2"><a href="directions.html">Directions</a></li>
+        <li class="dropdown_item-3"><a href="what-we-do.html">What we do</a></li>
+        <li class="dropdown_item-3"><a href="news.html">News</a></li>
+        <li class="dropdown_item-3"><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="notice">
+    <div class="noticeIcon">
+      <i class="fa fa-info-circle"></i>
+
+    </div>
+    <div>
+      Madrasa for kids teaching Quranic Arabic and Islam coming soon.
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="news">
+    <div class="servicesTitle">
+      News
+    </div>
+    <div class="newsContainer">
+      <div class="card">
+        <div class="card__info">
+          <a href="#" class="title">Madrasa for kids</a>
+          <p class="content">
+            Madrasa for kids teaching Quranic Arabic and Islam coming soon.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__info">
+          <a href="#" class="title">Volunteer with us</a>
+          <p class="content">
+            Get Involved!
+
+            Dedicate your precious time and energy in serving our community. Volunteer with us today and bring a range
+            of skills, expertise and experience that help enhance the services at Al Salaam Islamic Centre.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="mainFooter">
+      <img src="images/asiclogo.svg" height="50px">
+      <div>
+        Al Salaam Islamic Centre
+
+      </div>
+      <div>
+        Floor 0 Unimix House, Abbey Road, London, NW10 7SB
+
+      </div>
+      <div>
+        United Kingdom
+
+      </div>
+
+      <!-- <div class="socialsFooter">
+        Follow us on
+      </div>
+      <div class="socialIconsFooter">
+
+      </div> -->
+
+
+    </div>
+
+  </footer>
+
+  <script type="text/javascript">
+    
+
+
+    (function () {
+      var button = document.getElementById("toggle-menu");
+      var menu = document.getElementById("main-menu");
+
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
+        menu.classList.toggle("is-open");
+      });
+
+      // Event listener to close the menu when clicking outside of it
+      document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !button.contains(event.target)) {
+          menu.classList.remove("is-open");
+        }
+      });
+    })();
+
+
+
+  </script>
+</body>
+
+
+</html>

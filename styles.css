@@ -358,7 +358,9 @@ main {
 
 
 .notice {
-  margin: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  width: 350px;
   padding: 10px;
   border: rgba(23, 250, 31, 0.825) 3px solid;
   border-radius: 10px;

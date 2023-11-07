@@ -47,6 +47,14 @@ body {
   }
 }
 
+.headerTitle {
+  height: 40px;
+  /* border: red 1px solid; */
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
 
 .in-title {
   /* border: #000000 solid 1px; */
@@ -54,6 +62,11 @@ body {
   font-size: 16pt;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
   /* text-shadow: 0 0 2px rgb(255, 158, 1); */
 
 }
@@ -618,12 +631,15 @@ footer {
   font-weight: 100;
 }
 
+
+
 .title {
   text-decoration: none;
   font-weight: 600;
   font-size: 17pt;
   color: rgb(255, 255, 255);
   font-family: 'Jost', sans-serif;
+  
 }
 
 .content {
